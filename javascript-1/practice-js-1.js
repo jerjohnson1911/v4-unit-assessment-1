@@ -1,17 +1,17 @@
 //////////////////PROBLEM 1////////////////////
 /* Create a variable called 'myName' with a value that is your name as a string. */
 
-//CODE HERE 
+const myName = 'Jeremiah'
 
 //////////////////PROBLEM 2////////////////////
 /* Create a variable called 'faveNum' with a value that is your favorite number. */
 
-//CODE HERE
+const faveNum = 7
 
 //////////////////PROBLEM 3////////////////////
 /* Create a variable called 'lovesCode' and assign it a boolean value. */
 
-//CODE HERE
+const lovesCode = true
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -19,7 +19,9 @@
   The function should return the sum of the two parameters.
 */
 
-//CODE HERE
+function sum(num1, num2) {
+  return (num1 + num2)
+}
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -29,7 +31,13 @@
   If 'data' is a falsy value, return a false boolean.
 */
 
-//CODE HERE
+function trueOrFalse(data){
+  if(data === true) {
+    return true
+  } else if (data !== true){
+    return false
+  }
+}
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -39,7 +47,14 @@
   If the number is even, return the string: 'the number is even'.
 */
 
-//CODE HERE
+function oddChecker(num) {
+  
+    if(num % 2 === 0){
+      return 'the number is even'
+    } else {
+      return 'the number is odd'
+    }
+}
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -48,7 +63,9 @@
   "NAMEPARAM loves LOVEPARAM" with the appropriate parameters in the string. e.g. "Joseph loves music"
 */
 
-//CODE HERE
+function iLove(name, love){
+  return (name + 'loves' + love)
+}
 
 
 //////////////////PROBLEM 8////////////////////
@@ -56,12 +73,12 @@
 
 const faveColors = ['red', 'green', 'black']
 
-//CODE HERE
+const colorCopy = faveColors.slice()
 
 //////////////////PROBLEM 9////////////////////
 /* Add a fourth color to the end of the 'colorCopy' array using the push method. */
 
-//CODE HERE
+colorCopy.push('red')
 
 //////////////////PROBLEM 10////////////////////
 /*
@@ -71,7 +88,7 @@ const faveColors = ['red', 'green', 'black']
 
 const numbers = [1, 2, 3, 4, 5]
 
-//CODE HERE
+const middleNums = numbers.slice(2, 4)
 
 //////////////////PROBLEM 11////////////////////
 /*
